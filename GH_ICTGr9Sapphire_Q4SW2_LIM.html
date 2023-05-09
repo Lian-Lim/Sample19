@@ -1,0 +1,72 @@
+<html>
+<head>
+     <meta charset="utf 8">
+     <meta name="viewport" content="width=device-width, initial scale=1">
+     <title>Coverting Time Unit</title>
+     <h1>Time Converting</h1>
+    <style>
+      body{
+
+      margin-left:auto ;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-top: auto;
+      padding-top: auto;
+      padding-bottom: auto;
+      padding-right: auto;
+      padding-left: auto;
+
+
+      }
+      h1{
+        font-family: cursive;
+      }
+
+      
+
+
+
+
+    </style>
+</head>
+<body>
+    <img src="https://imageio.forbes.com/blogs-images/startswithabang/files/2017/08/1280px-Delorean_DMC-12_Time_Machine_in_San_Francisco-1200x800.jpg?format=jpg&width=960" class="circle" width="130"><br><br>
+    
+    <br>
+    <table class="center">
+	      <input type="text" id="id1"><br>
+        <input type="button" class="btn btn-primary" onclick="SecMin()" value="To Minutes"><br>
+        <input type="button" class="btn btn-primary" onclick="SecHr()" value="To Hours"><br>
+        <input type="button" class="btn btn-primary" onclick="SecDt()" value="To Days"><br> 
+
+        <p id="id3"></p>
+        <p id="id4"></p>
+        <p id="id5"></p>
+    </table>
+    <table>
+    
+	<script>
+        function SecMin() {
+              var var1 = document.getElementById('id1').value;
+              var answer = Number(var1) / Number(60);
+              //window.alert(answer)
+              document.getElementById('id3').innerHTML = answer + " minutes ";
+        
+      }
+        function SecHr() {
+              var var1 = document.getElementById('id1').value;
+              var answer = Number(var1) / Number(3600);
+              //window.alert(answer)
+              document.getElementById('id4').innerHTML = answer + " hours ";
+     } 
+      function SecDt() {
+              var var1 = document.getElementById('id1').value;
+              var answer = Number(var1) / Number(86400);
+              //window.alert(answer)
+              document.getElementById('id5').innerHTML = answer + " days ";
+     } 
+  </script>
+</table>
+
+	</body>
+	</html>
